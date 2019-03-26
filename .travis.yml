@@ -2,4 +2,4 @@ language: csharp
 mono: none
 dotnet: 2.1.502
 script:
- - dotnet build BE\src\PPD.ESchool.Host\PPD.ESchool.Host.csproj
+ - dotnet build ./BE/src/PPD.ESchool.Host/PPD.ESchool.Host.csproj
