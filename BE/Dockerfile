@@ -3,8 +3,8 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2.105-alpine3.9 AS build
 WORKDIR /app
 
 COPY . .
-RUN dotnet restore
 RUN ls
+RUN dotnet restore
 RUN dotnet publish --output /out/ --configuration Release
 
 # run
