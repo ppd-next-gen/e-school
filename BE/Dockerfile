@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . .
 RUN dotnet restore
+RUN ls
 RUN dotnet publish --output /out/ --configuration Release
 
 # run
